@@ -5,6 +5,11 @@ https://taylorleach.me/css-box-drawings
 
 ![alt text](https://github.com/tayloraleach/css-box-drawing-animations/blob/master/screenshot.png)
 
+## To run locally
+1. clone
+2. `npm install`
+3. `gulp watch` inside the root of the project
+
 ### Credits:
 https://freebiesbug.com/psd-freebies/free-psd-landing-page/
 
