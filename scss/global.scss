@@ -1,0 +1,36 @@
+// Import Fonts
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+// Global Variables
+$black: #000;
+$white: #ffffff;
+$off_white: #f0f2f5;
+$dark_text: rgba(0, 0, 0, 0.6);
+
+body {
+  font-family: "Lato", times, sans-serif;
+  background-color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.1em;
+  letter-spacing: 0.15em;
+}
+
+p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+h1 {
+  font-size: 48px;
+}

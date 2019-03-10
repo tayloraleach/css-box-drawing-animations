@@ -1,0 +1,74 @@
+#landing-header {
+  height: 100vh;
+  background-image: url(../images/landing.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  color: $white;
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .container {
+    transform: translateY(-50px);
+    max-width: 550px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      margin-bottom: 60px;
+      background-image: url(../images/logo.png);
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    p {
+      margin-top: 30px;
+      text-transform: uppercase;
+      color: $off_white;
+      letter-spacing: 0.1em;
+    }
+  }
+  .indicator {
+    position: absolute;
+    bottom: 10%;
+    width: 14px;
+    height: 24px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+    &:after {
+      animation-name: back-fourth;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      top: 6px;
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 100%;
+      background-color: $white;
+    }
+  }
+}
+
+@keyframes back-fourth {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}

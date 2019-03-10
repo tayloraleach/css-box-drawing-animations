@@ -1,0 +1,246 @@
+#about-us-section,
+#what-we-do-section,
+#contact-section {
+  .left-mask-top {
+    left: -125%;
+    transform-origin: 0% 0%;
+  }
+  .right-mask-top {
+    right: -125%;
+    transform-origin: 100% 100%;
+  }
+  .left-mask-top,
+  .right-mask-top {
+    width: 125%;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    height: 6px;
+    top: calc(50% - 2px);
+    animation-name: scale_x_to_zero;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .left-mask-side {
+    left: -2px;
+  }
+  .right-mask-side {
+    right: -2px;
+  }
+  .left-mask-side,
+  .right-mask-side {
+    transform-origin: 100% 100%;
+    animation-name: scale_y_to_zero;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    z-index: 2;
+    top: -2px;
+    width: 6px;
+    position: absolute;
+    background-color: white;
+    height: calc(100% + 8px);
+  }
+  .right-mask-bottom {
+    right: 0;
+    transform-origin: 0 0;
+  }
+  .left-mask-bottom {
+    transform-origin: 100% 100%;
+    left: 0;
+  }
+  .left-mask-bottom,
+  .right-mask-bottom {
+    width: 50%;
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    height: 6px;
+    bottom: -4px;
+    animation-name: scale_x_to_zero;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.6s;
+  }
+}
+
+@keyframes scale_x_to_zero {
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes scale_y_to_zero {
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+#about-us-section,
+#what-we-do-section,
+#contact-section {
+  overflow-x: hidden;
+  margin: 0 30px;
+  h2 {
+    min-width: 175px;
+    @media screen and (max-width: 650px) {
+      min-width: 140px;
+    }
+  }
+}
+
+#services-section,
+#alternate-section {
+  padding: 0 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/services.jpg);
+  width: 100%;
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#what-we-do-section {
+  h2 {
+    min-width: 232px;
+    @media screen and (max-width: 650px) {
+      min-width: 182px;
+    }
+  }
+  .what-wrapper {
+    padding-top: 20px;
+    &>div {
+      margin-bottom: 50px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .icon-1,
+    .icon-2,
+    .icon-3 {
+      margin: auto;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: scale(0.7);
+    }
+    .icon-1 {
+      width: 80px;
+      height: 83px;
+      background-image: url(../images/pen.jpg);
+    }
+    .icon-2 {
+      width: 79px;
+      height: 76px;
+      background-image: url(../images/browser.jpg);
+    }
+    .icon-3 {
+      width: 79px;
+      height: 91px;
+      background-image: url(../images/clipboard.jpg);
+    }
+  }
+}
+
+#contact-section {
+  text-align: center;
+  button {
+    margin: 30px 0 10px;
+    border: 0;
+    outline: none;
+    background-color: #333;
+    color: $white;
+    cursor: pointer;
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    letter-spacing: 0.15em;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+  }
+  @media screen and (max-width: 650px) {
+    h2 {
+      min-width: 175px;
+    }
+    button {
+      margin: 10px;
+    }
+  }
+}
+
+fieldset {
+  max-width: 700px;
+  legend {
+    padding: 20px 60px;
+    font-size: 28px;
+    color: $white;
+  }
+  .padding {
+    padding: 20px 120px 20px;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    legend {
+      padding: 0 10px;
+      font-size: 22px;
+    }
+    .padding {
+      padding: 30px 30px 10px;
+    }
+  }
+}
+
+.container.black,
+.container.white:not(fieldset) {
+  position: relative;
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 50px 120px 20px;
+  max-width: 700px;
+  margin: 100px auto;
+  h2 {
+    padding: 20px 60px;
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 650px) {
+    padding: 40px 30px 10px;
+    margin: 50px auto;
+    h2 {
+      font-size: 22px;
+      padding: 0 10px;
+      margin: 0;
+    }
+  }
+}
+
+.black {
+  h2 {
+    background-color: $white;
+  }
+  p {
+    color: $dark_text;
+  }
+}
+
+.white {
+  border: 2px solid $white;
+  p,
+  h2 {
+    color: $white;
+  }
+}
