@@ -3,7 +3,7 @@ A simple landing page to demonstrate some nifty CSS animation that appear to dra
 
 https://taylorleach.me/css-box-drawings
 
-
+![alt text](https://github.com/tayloraleach/css-box-drawing-animations/blob/master/screenshot.png)
 
 ### Credits:
 https://freebiesbug.com/psd-freebies/free-psd-landing-page/
