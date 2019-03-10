@@ -4,5 +4,6 @@ A simple landing page to demonstrate some nifty CSS animation that appear to dra
 https://taylorleach.me/css-box-drawings
 
 ### Credits:
-I found the PSD here and brought it to life with some animations!
 https://freebiesbug.com/psd-freebies/free-psd-landing-page/
+
+I found the PSD and brought it to life with some animations!
